@@ -71,9 +71,16 @@ c:\claude-subagents\code\
 · **OC authors canon** (`canon/**`). CC executes and does not author canon without
   explicit instruction (JAKE-RULES §7.6).
 · CC writes inside `c:\claude-subagents\code` only. Never repo root of another project.
-· ⚠ **This tree is NOT a git repository** (observed 8-23-26 — no `.git` anywhere).
-  Disk is the only state. There is no commit to fall back to, so a destructive edit is
-  final — back up to `c:\claude-MCP\_scratch\` before any structural change.
+· ⚠ **This tree IS a git repository as of 8-23-26 (S1), and MOST OF IT IS STILL UNVERSIONED.**
+  Remote `jakebotticello-spec/claude-subagents`, PUBLIC, root commit `f571319`. **Exactly 4
+  files are tracked** — `CLAUDE.md`, `.gitignore`, `.agents/README.md`, and
+  `canon/build-specs/Agent_Team_Spec_v1.0.md`. Everything else is deliberately gitignored:
+  `.claude/`, `.codex/`, `.canon-manifest.json`, `canon/BOOT.md`, `canon/changelog/`,
+  `canon/handoffs/`. **So for nearly all of canon, disk is still the only state and a
+  destructive edit is still final** — back up to `c:\claude-MCP\_scratch\` before any
+  structural change. Git is a publishing surface here, not a safety net.
+  *(Corrected in place per JAKE-RULES §5.1 — the prior line said no `.git` existed anywhere,
+  true when written at 8-23-26 and false after the S1 init.)*
 · The librarian serves this group live off disk. A save is instantly visible: no git,
   no cache, no propagation delay.
 

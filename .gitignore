@@ -37,6 +37,7 @@ _scratch/
 *.log
 *.bak
 *.tmp
+.scribe-probe.txt
 
 # --- generated / daemon-owned (CC call, S1 — see commit report) ---
 # Filer-owned, rewritten continuously while the daemon runs. Observed changing
